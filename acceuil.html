@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="acceuil.html"><img src="pieuvre.svg" alt=""> </a>
+        <h1>QUIZ NUM'</h1>
+        <nav>
+       
+<a id="pop" onclick="togglePopup()"> Activer le popup</a> 
+
+
+<div id="popup-overlay">
+    <div class="popup-content"> 
+        <div>
+            <h2>se connecter</h2>
+            <form action="se connecter" id="connection">
+                <label for="username">Email :</label>
+                <input type="text" name="email" id="username" placeholder="Ton mail" required><br><br>
+    
+                <label for="mdp">Mot de passe :</label>
+                <input type="password" id="mdp" placeholder="Ton mot de passe" required><br><br>
+    
+                <button type="submit">se Connecter</button>
+                <a href="#">Créer un compte</a>
+            </form>
+            <!--Div résultat ou erreurs -->
+            <div id="result"></div>
+        </div>
+        <!-- a href="/" class="popup-link">Wikommen</a> -->
+        <a href="javascript:void(0);" onclick="togglePopup()" class="popup-exit">Fermer</a>  <!--href="javascript:void(0); : Cela empêche le lien de rediriger vers une autre page. --> 
+    </div>  <!-- overlay pour réduire l'opacité de la page et mettre en avant mon popup --> 
+    </header>
+    <main>
+        <input type="search" name="Rechercher un joueur" id="Rechercher un joueur" placeholder="Rechercher un joueur">
+    <h3>NOS THEMES</h3>
+
+    <div class="cards">
+        <card id="card1">
+            <h4>Les logos du numérique</h4>
+            <img src="logo_apple.png" alt="logo de la marque Apple">
+            <p>Trouvez de quel logo il s'agit</p>
+            <a href="logo_dev.html"><input  type="button" value="Jouer le quizz"></a>
+        </card>
+        <card id="card2">
+            <h4>Les logos du numérique</h4>
+            <img src="histoireDuNumerique.png" alt="Histoire du Numerique">
+            <p>Apprends sur l'histoire du numérique</p>         
+            <a href="histoire_dev.html"><input  type="button" value="Jouer le quizz"></a>
+        </card>
+        <card id="card3">
+            <h4>Les logos du numérique</h4>
+            <img src="groupLogo.png" alt="logo de la marque Apple">
+            <p>Apprends les bases de dévellopement</p>
+            <a href="base_dev.html"><input type="button" value="Jouer le quizz"></a>
+        </card>
+    </div>
+
+    </main>
+    <footer>
+        <p>©_Projet crée par Evan,  Emilie & Guilhem</p>
+        <nav>
+            <ul> 
+                <li>Nous contacter</li>
+                <li>Qui sommes  nous ?</li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
